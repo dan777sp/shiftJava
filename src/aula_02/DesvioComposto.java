@@ -17,7 +17,7 @@ public class DesvioComposto {
         	taxa = doacao * 0.15;        	
         }
         
-        investimento = doacao + taxa;
+        investimento = doacao - taxa;
         
         System.out.println("A doacao de " + doacao + " com taxa de " + taxa + " ira gerar um investimento de: " + investimento);
 	}
