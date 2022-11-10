@@ -11,13 +11,16 @@ public class OperadorE {
 		System.out.println("Por favor, digite seu username:");
 		usuario = leitor.next();
 		System.out.println("Por favor, digite sua senha:");
-		senha = leitor.next();	
+		senha = leitor.next();
+		leitor.close();
 		//Aqui � preciso criar um if que verifique as duas condi��es para o login ser bem sucedido
 		
+		if (usuario.equals("admin") && senha.equals("123")) {
+			System.out.println("Bem-Vindo " + usuario + " :)");
+		} else {
+			System.out.println("Usuario ou senha invalidos.");
+		}
 		
-		
-		leitor.close();
-
 	}
 
 }

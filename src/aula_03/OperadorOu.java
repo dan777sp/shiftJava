@@ -13,10 +13,16 @@ public class OperadorOu {
 		totalCompra = leitor.nextDouble();
 		System.out.println("Por favor, digite o seu cupom");
 		cupom = leitor.next();
-		
+		leitor.close();
 		//Aqui � preciso criar um if que verifique as duas condi��es para que o desconto seja ou n�o aplicado
 		
-		System.out.println("O valor final � de R$" + valorFinal);
+		if (totalCompra > 1000 || cupom.equals("DESCONTO20")) {
+			valorFinal = (totalCompra - totalCompra * 0.2);
+		} else {
+			valorFinal = totalCompra;
+		}
+		
+		System.out.println("O valor final eh de R$" + String.format("%.2f", valorFinal));
 
 	}
 
