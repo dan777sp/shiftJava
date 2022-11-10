@@ -18,6 +18,20 @@ public class BalancaMetais {
 		bronze = leitor.nextFloat();
 
 		leitor.close();
+		
+		//com if encadeado
+		/*
+		 * if (ouro > prata) { if (ouro > bronze) {
+		 * System.out.println("Ouro é o metal mais pesado"); } else {
+		 * System.out.println("Bronze é o metal mais pesado"); } } else { if (prata >
+		 * bronze) { System.out.println("Prata é o metal mais pesado"); } else {
+		 * System.out.println("Bronze é o metal mais pesado"); } }
+		 * 
+		 * //com operadores if (ouro > prata && ouro > bronze) {
+		 * System.out.println("Ouro é o metal mais pesado"); } else if (prata > bronze)
+		 * { System.out.println("Prata é o metal mais pesado"); } else {
+		 * System.out.println("Bronze é o metal mais pesado"); }
+		 */
 
 		if (ouro > bronze && ouro > prata) {
 			System.out.println("Ouro eh o metal mais pesado");

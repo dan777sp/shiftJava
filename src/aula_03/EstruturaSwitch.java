@@ -21,13 +21,13 @@ public class EstruturaSwitch {
 
 		switch (opcao) {
 		case 1:
-			System.out.println("Elogio profissional");
+			System.out.println("Voce eh um excelente profissional");
 			break;
 		case 2:
-			System.out.println("Elogio fisico");
+			System.out.println("Voce tem um otimo fisico");
 			break;
 		case 3:
-			System.out.println("1Elogio pessoal");
+			System.out.println("Voce eh uma otima pessoa");
 			break;
 		default:
 			System.out.println("Opcao invalida");
