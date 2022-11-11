@@ -50,6 +50,8 @@ public class BalancaMetais {
 		} else {
 			System.out.println("Dados de entrada invalidos");
 		}
+		
+		System.out.println((ouro > prata ? "ouro eh mais pesado" : "prata eh mais pesado"));
 
 	}
 }
