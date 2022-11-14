@@ -72,34 +72,85 @@ public class ExerciciosLoopWhile {
 //			}
 //		}
 		 
-		int opcao = 0;
+//		int opcao = 0;
+//		Scanner leitor = new Scanner(System.in);
+//
+//		while (opcao != 4) {
+//			System.out.println("ESTRUTURA DE MENUS");
+//			System.out.println("Suas opcoes sao:\n1-Opcao 1\n2-Opcao 2\n3-Opcao 3\n4-Sair");
+//			opcao = leitor.nextInt();
+//			switch (opcao) {
+//			case 1:
+//				System.out.println("Voce escolheu a opcao 1");
+//				break;
+//			case 2:
+//				System.out.println("Voce escolheu a opcao 2");
+//				break;
+//			case 3:
+//				System.out.println("Voce escolheu a opcao 3");
+//				break;
+//			case 4:
+//				System.out.println("Ok! Saindo do sistema...");
+//				break;
+//			default:
+//				System.out.println("A opcao escolhida nao existe...");
+//			}
+//		}
+//		leitor.close();
+		
+//		1.Usuário informa um número e o programa calcula o fatorial deste número
+		
+//		int i = 0;
+//		double fatorial = 0;
+//		String result;
+//		Scanner leitor = new Scanner(System.in);
+//		System.out.println("Digite o valor para calcular o fatorial:");
+//		fatorial = i = leitor.nextInt();
+//		result = i + "! = " + i + " * ";
+//		leitor.close();
+//
+//		if (i == 0) {
+//			System.out.println(i + "! = 1");
+//		} else {
+//
+//			while (i > 1) {
+//				i--;
+//				fatorial = fatorial * i;
+//				if (i != 1) {
+//					result = result + i + " * ";
+//				} else {
+//					result = result + i + " = ";
+//				}
+//
+//			}
+//			System.out.println(result + fatorial);
+//		}
+		
+		
+		
+		
+//		2.Criar um sistema de validação de usuário. Enquanto o usuário e a senha forem inválidos manter o loop. Ao final exibir a qtd de tentativas
+		
+		
+		int i = 1;
+		String usuario = "dan", senha = "123";
+		
 		Scanner leitor = new Scanner(System.in);
-
-		while (opcao != 4) {
-			System.out.println("ESTRUTURA DE MENUS");
-			System.out.println("Suas opcoes sao:\n1-Opcao 1\n2-Opcao 2\n3-Opcao 3\n4-Sair");
-			opcao = leitor.nextInt();
-			switch (opcao) {
-			case 1:
-				System.out.println("Voce escolheu a opcao 1");
+		
+		
+		while (true) {
+			System.out.println("Digite o usuario: ");
+			usuario = leitor.next();
+			System.out.println("Digite a senha:");
+			senha = leitor.next();
+			if (usuario.equals("dan") && senha.equals("123")) {
+				System.out.println("Bem vindo " + usuario + "\nTentativas: " + i);
 				break;
-			case 2:
-				System.out.println("Voce escolheu a opcao 2");
-				break;
-			case 3:
-				System.out.println("Voce escolheu a opcao 3");
-				break;
-			case 4:
-				System.out.println("Ok! Saindo do sistema...");
-				break;
-			default:
-				System.out.println("A opcao escolhida nao existe...");
+			} else {
+				i++;
 			}
 		}
 		leitor.close();
-		
-//		1.Usuário informa um número e o programa calcula o fatorial deste número
-//		2.Criar um sistema de validação de usuário. Enquanto o usuário e a senha forem inválidos manter o loop. Ao final exibir a qtd de tentativas
 		
 		
 	}
