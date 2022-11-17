@@ -100,31 +100,33 @@ public class ExerciciosLoopWhile {
 		
 //		1.Usuário informa um número e o programa calcula o fatorial deste número
 		
-//		int i = 0;
-//		double fatorial = 0;
-//		String result;
-//		Scanner leitor = new Scanner(System.in);
-//		System.out.println("Digite o valor para calcular o fatorial:");
-//		fatorial = i = leitor.nextInt();
-//		result = i + "! = " + i + " * ";
-//		leitor.close();
-//
-//		if (i == 0) {
-//			System.out.println(i + "! = 1");
-//		} else {
-//
-//			while (i > 1) {
-//				i--;
-//				fatorial = fatorial * i;
-//				if (i != 1) {
-//					result = result + i + " * ";
-//				} else {
-//					result = result + i + " = ";
-//				}
-//
-//			}
-//			System.out.println(result + fatorial);
-//		}
+		int i = 0;
+		double fatorial = 0;
+		String result;
+		Scanner leitor = new Scanner(System.in);
+		System.out.println("Digite o valor para calcular o fatorial:");
+		fatorial = i = leitor.nextInt();
+		result = i + "! = " + i + " * ";
+		leitor.close();
+
+		if (i == 0) {
+			System.out.println(i + "! = 1");
+		} else if (i < 0) {
+			System.out.println("Valor invalido");
+		} else {
+
+			while (i > 1) {
+				i--;
+				fatorial = fatorial * i;
+				if (i != 1) {
+					result = result + i + " * ";
+				} else {
+					result = result + i + " = ";
+				}
+
+			}
+			System.out.println(result + String.format("%.0f", fatorial));
+		}
 		
 		
 		
@@ -132,25 +134,25 @@ public class ExerciciosLoopWhile {
 //		2.Criar um sistema de validação de usuário. Enquanto o usuário e a senha forem inválidos manter o loop. Ao final exibir a qtd de tentativas
 		
 		
-		int i = 1;
-		String usuario = "dan", senha = "123";
-		
-		Scanner leitor = new Scanner(System.in);
-		
-		
-		while (true) {
-			System.out.println("Digite o usuario: ");
-			usuario = leitor.next();
-			System.out.println("Digite a senha:");
-			senha = leitor.next();
-			if (usuario.equals("dan") && senha.equals("123")) {
-				System.out.println("Bem vindo " + usuario + "\nTentativas: " + i);
-				break;
-			} else {
-				i++;
-			}
-		}
-		leitor.close();
+//		int i = 1;
+//		String usuario = "dan", senha = "123";
+//		
+//		Scanner leitor = new Scanner(System.in);
+//		
+//		
+//		while (true) {
+//			System.out.println("Digite o usuario: ");
+//			usuario = leitor.next();
+//			System.out.println("Digite a senha:");
+//			senha = leitor.next();
+//			if (usuario.equals("dan") && senha.equals("123")) {
+//				System.out.println("Bem vindo " + usuario + "\nTentativas: " + i);
+//				break;
+//			} else {
+//				i++;
+//			}
+//		}
+//		leitor.close();
 		
 		
 	}

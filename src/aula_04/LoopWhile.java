@@ -1,6 +1,5 @@
 package aula_04;
 
-import java.text.Format;
 import java.util.Scanner;
 
 public class LoopWhile {
