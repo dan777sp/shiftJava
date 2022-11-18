@@ -33,17 +33,18 @@ public class LoopFor {
 				for (int i = 0; i < qtdAlunos; i++) {
 					System.out.println("Digite a nota do aluno " + (i + 1) + ":");
 					nota = leitor.nextDouble();
-					if (i % 2 == 0) {
+					if ((i+1) % 2 == 0) {
 						mediaPares = mediaPares + nota;
 					} else {
 						mediaImpares = mediaImpares + nota;
 					}
 						
 				}
+				
 				leitor.close();
 
-				System.out.println("A media dos alunos pares eh de: " + String.format("%.1f", (mediaPares / qtdAlunos)));
-				System.out.println("A media dos alunos impares eh de: " + String.format("%.1f", (mediaImpares / qtdAlunos)));
+				System.out.println("A media dos alunos pares é de: " + String.format("%.1f", (mediaPares / qtdAlunos * 2)));
+				System.out.println("A media dos alunos impares eh de: " + String.format("%.1f", (mediaImpares / qtdAlunos * 2)));
 
 	}
 
