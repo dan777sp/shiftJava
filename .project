@@ -14,16 +14,4 @@
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
-	<linkedResources>
-		<link>
-			<name>src/aula_06/DrawSmiley.java</name>
-			<type>1</type>
-			<location>C:/Users/Pichau/Downloads/DrawSmiley.java</location>
-		</link>
-		<link>
-			<name>src/aula_06/RandomIntegers.java</name>
-			<type>1</type>
-			<location>C:/Users/Pichau/Downloads/RandomIntegers.java</location>
-		</link>
-	</linkedResources>
 </projectDescription>
